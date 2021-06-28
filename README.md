@@ -85,6 +85,8 @@ As a measure to prevent downtime as much as I can, this domain is rate-limited t
 
 Converts morse code/string to & from color-coded images. Visit [here](https://carolmontez42.github.io/ccode/code.html)
 
+<br>
+
 ## Usage
 
 Load / Save image or text

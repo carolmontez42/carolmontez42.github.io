@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <link href="print.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body onload="setid()">
+  <div id="a">
+    <div class="b"><input id="box" autocomplete="off"><button onclick="printP()">SEND</button></div>
+    <div class="b"><button onclick="setid()">GUID</button><input id="idn_cl" autocomplete="off"></div>
+  <br>
+    <button class="fa fa-print" onclick="printI()" style="font-size: 30px; float: right;" menu="Print Page"></button>
+    <div id="c"></div>
+    <div>GUID will be reset on reload.<br><br><big>Enter code/Click SEND</big> to send request<br><big>Click GUID</big> to set/reset id<br><br><br><i><small>jQuery 1.6.2, <ins onclick="window.open('https://github.com/Rob--W/cors-anywhere')">CORS Anywhere</ins></small></i></div>
+  </div>
+  <div id="con"></div>
+  <script src="print.js"></script>
+</body>
+
+</html>

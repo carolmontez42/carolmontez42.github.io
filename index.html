@@ -2,24 +2,17 @@
 <html lang="en">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <link href="main.css" rel="stylesheet" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body onload="setid()">
-  <div id="a">
-    <div id="b"><input id="box" autocomplete="off"><button onclick="printP()">SEND</button></div>
-    <div id="b"><button onclick="setid()">GUID</button><input id="idn_cl" autocomplete="off"></div>
-  <br>
-    <button class="fa fa-print" onclick="printI()" style="font-size: 30px; float: right;" menu="Print Page"></button>
-    <button class="fa fa-github" onclick="git()" style="font-size: 30px; float: right; margin-right: 20px;" menu="Github Repo"></button>
-    <div id="c"></div>
-    <div>GUID will be reset on reload.<br><br><big>Enter code/Click SEND</big> to send request<br><big>Click GUID</big> to set/reset id<br><br><br><i><small>jQuery 1.6.2, <ins onclick="cors()">CORS Anywhere</ins></small></i></div>
+<body>
+  <div id="box">
+    <button class="fa fa-print" onclick="window.open('print/print.html')"></button>
+    <button class="fa fa-qrcode" onclick="window.open('ccode/code.html')"></button>
+    <button class="fa fa-github" onclick="window.open('https://github.com/carolmontez42/carolmontez42.github.io')"></button>
   </div>
-  <div id="con"></div>
-  <script src="print.js"></script>
-  <style type="text/css">body { margin: 0; width: 100%; height: 100%; overflow: hidden; background-color: #1e1e1e; color: #707070; font-size: 20px; font-family: 'Oswald'; } input { border: none; width: 100%; padding: 10px; background-color: #414141; color: white; font: inherit; font-weight: 300; } button { border: none; padding: 10px 20px; background-color: #101010; color: #707070; font: inherit; } button:hover { color: white; transition-duration: 0.4s; } img { max-height: 100%; } #a { float: left; height: 100%; margin: 20px; } #b { width: 440px; margin-bottom: 20px; display: flex; } #c { height: calc(100vh - 432px); min-height: 100px; } #con { position: absolute; left: 480px; margin: 20px; padding: 20px; width: calc(100vh - 80px); height: calc(100vh - 80px); min-width: 452px; min-height: 452px; background-color: #101010; } [menu]:hover::after { content: attr(menu); font-family: 'Oswald'; font-size: 20px; padding-left: 10px; }</style>
 </body>
 
 </html>

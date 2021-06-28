@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="code.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Oswald:wght@300;400" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="menubar">
+    <input id="scan" type="file" hidden>
+    <label id="scan2" for="scan">Load Image / Text</label>
+    <label id="print">Save Image</label>
+    <label id="print2">Save Text</label>
+    <label id="crop">Crop to Fit</label>
+    <p>Set Color Codes</p>
+    <input id="kset" autocomplete="off"></input>
+    <p>Set Viewport Size</p>
+    <input id="zoom" type="number" min="1" autocomplete="off">
+    <p>Break Line At</p>
+    <input id="split" type="number" min="1">
+    <div id="viewbar">
+      <big id="size">W: 0<br>H: 0</big><br>
+      <i><small>Max 1024 * 1024<br>Viewport 8192 * 8192</small></i>
+    </div>
+  </div>
+  <div id="screen">
+    <textarea id="box" autocomplete="off"></textarea>
+    <canvas id="canvas" width="0" height="0" hidden></canvas>
+    <canvas id="canvas2" width="300" height="150"></canvas>
+  </div>
+  <script src="code.js"></script>
+</body>
+
+</html>

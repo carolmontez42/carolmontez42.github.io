@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(30, 30, 30);
+  font-size: 80px;
+}
+
+button {
+  border: none;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(16, 16, 16);
+  color: rgb(112, 112, 112);
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+#box {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}

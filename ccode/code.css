@@ -1,0 +1,68 @@
+body {
+  margin: 20px;
+  background-color: rgb(30, 30, 30);
+  font-size: 20px;
+  font-family: 'Oswald';
+  color: rgb(112, 112, 112);
+}
+
+label {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px 20px;
+  background-color: rgb(10, 10, 10);
+}
+
+label:hover {
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+input {
+  border: none;
+  width: 150px;
+  padding: 8px 10px;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  font: inherit;
+}
+
+#menubar {
+  position: fixed;
+  width: 1000px;
+  height: 100%;
+  min-height: 600px;
+}
+
+#viewbar {
+  position: absolute;
+  bottom: 40px;
+}
+
+#screen {
+  position: absolute;
+  margin: 70px 210px;
+  width: calc(100% - 250px);
+  height: calc(100% - 110px);
+  overflow: scroll;
+}
+
+#box {
+  float: left;
+  border: none;
+  white-space: pre;
+  padding: 15px;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  font-size: 12px;
+  font-family: 'Roboto Mono';
+  letter-spacing: 9px;
+}
+
+#canvas2 {
+  position: absolute;
+  margin-left: 40px;
+  padding: 15px;
+  background-color: rgb(48, 48, 48);
+}

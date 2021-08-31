@@ -1,13 +1,12 @@
 body {
   background-color: rgb(30, 30, 30);
-  font-size: 80px;
+  font-size: 8vh;
 }
 
 button {
   border: none;
-  margin: 10px;
-  width: 300px;
-  height: 300px;
+  margin: 1%;
+  width: 48%;
   background-color: rgb(16, 16, 16);
   color: rgb(112, 112, 112);
 }
@@ -20,8 +19,14 @@ button:hover {
 
 #box {
   position: absolute;
-  display: flex;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  width: 60vh;
+  height: 60vh;
+}
+
+.bar {
+  display: flex;
+  height: 50%;
 }

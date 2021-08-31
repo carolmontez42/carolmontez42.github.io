@@ -10,14 +10,14 @@
 <body>
   <div id="menubar">
     <input id="scan" type="file" hidden>
-    <label id="scan2" for="scan">Load Image / Text</label>
+    <label for="scan">Load Image / Text</label>
     <label id="print">Save Image</label>
     <label id="print2">Save Text</label>
     <label id="crop">Crop to Fit</label>
     <p>Set Color Codes</p>
-    <input id="kset" autocomplete="off"></input>
+    <input id="kset"></input>
     <p>Set Viewport Size</p>
-    <input id="zoom" type="number" min="1" autocomplete="off">
+    <input id="zoom" type="number" min="1">
     <p>Break Line At</p>
     <input id="split" type="number" min="1">
     <div id="viewbar">
@@ -26,7 +26,7 @@
     </div>
   </div>
   <div id="screen">
-    <textarea id="box" autocomplete="off"></textarea>
+    <textarea id="box"></textarea>
     <canvas id="canvas" width="0" height="0" hidden></canvas>
     <canvas id="canvas2" width="300" height="150"></canvas>
   </div>

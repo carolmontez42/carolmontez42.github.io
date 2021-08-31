@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="hex.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&amp;family=Oswald:wght@300;400" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="toolbar">
+    <p>From</p>
+    <select id="coop">
+      <option value="0">Text</option>
+      <option value="1">Hex</option>
+      <option value="2">Binary</option>
+    </select>
+    <p>to</p>
+    <select id="coop2">
+      <option value="1">Hex</option>
+      <option value="2">Binary</option>
+    </select>
+    <label id="conv">Convert</label>
+    <div id="toolset">
+      <input id="filename">
+      <select id="fileop">
+        <option value="0">As Hex</option>
+        <option value="1">As Binary</option>
+      </select>
+      <input id="imp" type="file" hidden>
+      <label for="imp">Load File</label>
+      <label id="exp">Save File</label>
+    </div>
+  </div>
+  <textarea id="box"></textarea>
+  <script src="hex.js"></script>
+</body>
+
+</html>

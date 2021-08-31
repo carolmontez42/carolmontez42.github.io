@@ -101,7 +101,7 @@ print2.addEventListener("click", () => {
 
 kset.addEventListener("change", () => {
 
-  const res = [...kset.value.replace(/ /g, "").matchAll(/{([^ ]):0*([0-9]*),0*([0-9]*),0*([0-9]*)}/g)];
+  const res = kset.value.replace(/ /g, "").match(/{[^ ]:0*[0-9]*,0*[0-9]*,0*[0-9]*}/g);
 
   if (!res.length) {
     kset.value = Object.keys(kP).map(x => `{${x}:${kP[x].join(",")}}`).join("");
@@ -109,7 +109,7 @@ kset.addEventListener("change", () => {
   }
 
   kP = res.reduce((obj, e) => {
-    obj[e[1]] = new Uint8ClampedArray([e[2], e[3], e[4]]);
+    obj[e[1]] = new Uint8ClampedArray(e.slice(3, e.length - 1).split(","));
     return obj;
   }, {});
   rP = new RegExp(`[^ \n${Object.keys(kP).join("").replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&")}]`, "g");

@@ -1,5 +1,5 @@
-| [Printer](#printer) | [Color-coder](#color-coder) |
-| ------------------- | --------------------------- |
+| [Printer](#printer) | [Color-coder](#color-coder) | [Hex / Binary Converter](#hex--binary-converter) |
+| ------------------- | --------------------------- | ------------------------------------------------ |
 
 <br>
 
@@ -116,3 +116,21 @@ When selecting character-color pairs, the input must be in the following format 
 ```
 
 Whitespaces are omitted.
+
+<br>
+
+------
+
+<br>
+
+# Hex / Binary Converter
+
+Converts text into hexadecimal / binary stream.
+
+<br>
+
+## Usage
+
+`Convert` - Select an option from the list and convert
+
+`Save File` or `Load File` from & to stream

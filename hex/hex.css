@@ -1,0 +1,66 @@
+body {
+  margin: 20px;
+  background-color: rgb(30, 30, 30);
+  font-size: 20px;
+  font-family: 'Oswald';
+  color: rgb(112, 112, 112);
+}
+
+label {
+  margin-right: 15px;
+  padding: 8px 20px;
+  background-color: rgb(10, 10, 10);
+  font: inherit;
+}
+
+p {
+  display: inline;
+  font: inherit;
+}
+
+label:hover {
+  cursor: pointer;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+select {
+  border: none;
+  background-color: inherit;
+  color: white;
+  font: inherit;
+  margin: 8px 20px;
+  cursor: pointer;
+}
+
+#filename {
+  border: none;
+  padding: 8px 10px;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  font: inherit;
+}
+
+#toolbar {
+  position: fixed;
+  width: calc(100% - 25px);
+  min-width: 1050px;
+}
+
+#toolset {
+  float: right;
+}
+
+#box {
+  border: none;
+  padding: 15px;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  font-size: 12px;
+  font-family: 'Roboto Mono';
+  margin-top: 80px;
+  resize: none;
+  width: calc(100% - 30px);
+  height: calc(100vh - 150px);
+  margin: 80px 0 0 0;
+}

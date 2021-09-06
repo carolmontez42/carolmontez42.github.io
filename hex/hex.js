@@ -108,9 +108,14 @@ conv.addEventListener("click", () => {
 
   if (res !== null) {
     if (j === k) {
-      box.value = res[0];
+      if (j !== "0") {
+        box.value = res[0];
+      }
     } else {
       switch (k) {
+        case "0":
+          toTxt(res[1]);
+          break;
         case "1":
           toHex(res[1]);
           break;
@@ -205,6 +210,13 @@ function fromBin(e) {
   }
 
   return [cleaned, cleaned.match(/.{8}/g).map(x => parseInt(x, 2))];
+
+}
+
+
+function toTxt(e) {
+
+  box.value = e.map(x => String.fromCharCode(x)).join("");
 
 }
 

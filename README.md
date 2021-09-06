@@ -125,7 +125,7 @@ Whitespaces are omitted.
 
 # Hex / Binary Converter
 
-Converts text into hexadecimal / binary stream.
+Converts text into hexadecimal / binary stream. Visit [here](https://carolmontez42.github.io/hex/hex.html)
 
 <br>
 
